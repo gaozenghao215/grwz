@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高增浩 | 专业简历</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+        body { font-family: 'Noto Sans SC', 'Helvetica Neue', Arial, sans-serif; background-color: #f8f9fa; color: #343a40; line-height: 1.8; margin: 0; padding: 0; display: flex; justify-content: center; }
+        .container { max-width: 900px; width: 100%; margin: 20px; padding: 40px; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); border-radius: 12px; border-top: 5px solid #007bff; }
+        .header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #e9ecef; padding-bottom: 20px; margin-bottom: 25px; }
+        .header-title h1 { font-size: 2.5em; color: #212529; margin: 0; font-weight: 700; }
+        .header-title p { font-size: 1.1em; color: #6c757d; margin: 5px 0 0; font-weight: 300; }
+        #contact-info { font-size: 0.95em; color: #495057; text-align: right;}
+        #contact-info span { margin-left: 15px; }
+        .download-btn { background-color: #007bff; color: white; border: none; padding: 12px 20px; border-radius: 6px; font-size: 1em; cursor: pointer; transition: background-color 0.3s, transform 0.2s; font-weight: 500; white-space: nowrap; }
+        .download-btn:hover { background-color: #0056b3; transform: translateY(-2px); }
+        .tabs { display: flex; margin-bottom: 25px; border-bottom: 1px solid #dee2e6; }
+        .tab-btn { padding: 12px 20px; cursor: pointer; border: none; background-color: transparent; font-size: 1.1em; color: #6c757d; font-weight: 500; margin-bottom: -1px; border-bottom: 3px solid transparent; transition: color 0.3s, border-color 0.3s; }
+        .tab-btn.active { color: #007bff; border-bottom-color: #007bff; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        h2.content-title { font-size: 1.5em; color: #0056b3; border-left: 4px solid #007bff; padding-left: 15px; margin-top: 25px; margin-bottom: 20px; }
+        .job { margin-bottom: 25px; }
+        .job-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.1em; }
+        .job-company { color: #343a40; }
+        .job-date { color: #6c757d; }
+        .job-title { font-style: italic; color: #495057; margin-bottom: 10px; }
+        ul { padding-left: 20px; }
+        li{ margin-bottom: 10px; }
+        strong, b { font-weight: 700; color: #0056b3; }
+    </style>
+</head><body>
+<div class="container" id="main-container">
+    <div class="header">
+        <div class="header-title">
+            <h1>高增浩</h1>
+            <p>15+年经验 | 复合型运营与体系构建专家 | 战略落地者</p>
+        </div>
+        <div id="contact-info">
+             电话: 138-xxxx-xxxx<br>
+             邮箱: your-email@example.com<br>
+             地点: 福建省福州市
+        </div>
+    </div>
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="concise">精简版简历</button>
+        <button class="tab-btn" data-tab="full">完整版简历</button>
+        <button id="downloadPdfBtn" class="download-btn" style="margin-left: auto;">下载为 PDF</button>
+    </div>
+    <div id="concise" class="tab-content active">
+        <h2 class="content-title">专业概述</h2>
+        <p>拥有超过15年跨领域实战经验的商业体系构建专家。核心能力在于将公司战略转化为可执行、可复制的运营体系，通过<b>数字化工具、标准化流程与团队赋能</b>，驱动组织效率变革与业务的确定性增长。尤其擅长在混乱的业务初期建立秩序，为企业打造可持续增长的“运营基础设施”。</p>
+        
+        <h2 class="content-title">核心项目经验</h2>
+        <ul>
+            <li><b>主导构建业财一体化CRM中台 (COO, 邻犀生活)</b>：从0到1设计并落地以企微为核心的中台系统，整合财务、法务、OA等8个模块，实现业务全流程100%线上化，为管理层提供实时数据决策支持。</li>
+            <li><b>打造新媒体IP复制工厂 (新媒体运营, 福家房产)</b>：将不可控的创意内容“工业化”，创建<b>《内容生产方法论》</b>与SOP，成功将0基础经纪人团队培养成可稳定贡献<b>日均3+高意向线索</b>的IP矩阵。</li>
+            <li><b>驱动新业务从0到1实现商业闭环 (新媒体运营, 福家房产)</b>：亲率装修业务团队，以自建的新媒体获客体系为引擎，<b>3个月内从0达成100万业绩</b>，成功验证新业务模式。</li>
+            <li><b>策划低成本用户增长模型 (运营, 耕集良品)</b>：主导策划“社区拼团”与“会员砍价”活动，以<b>2.3元/人的行业领先CPA</b>，短期内高效获取数万付费用户及精准私域流量。</li>
+        </ul>
+        
+        <h2 class="content-title">工作经历</h2>
+         <div class="job">
+            <div class="job-header"><span class="job-company">邻犀生活</span><span class="job-date">近期</span></div>
+            <p class="job-title">COO</p>
+        </div>
+         <div class="job">
+            <div class="job-header"><span class="job-company">福家房产</span><span class="job-date">过往</span></div>
+            <p class="job-title">新媒体运营</p>
+        </div>
+        <div class="job">
+            <div class="job-header"><span class="job-company">耕集良品</span><span class="job-date">过往</span></div>
+            <p class="job-title">运营</p>
+        </div>
+        <div class="job">
+            <div class="job-header"><span class="job-company">心蓝天超市</span><span class="job-date">过往</span></div>
+            <p class="job-title">O2O负责人（517新鲜网创始人）</p>
+        </div>
+
+        <h2 class="content-title">专业技能</h2>
+        <p><b>体系构建 | 战略落地 | 数字化转型 | 增长黑客 | 产品管理 | 新媒体运营 | 项目管理 (PMP) | 知识管理</b></p>
+    </div>
+    <div id="full" class="tab-content">
+        <h2 class="content-title">专业概述</h2>
+        <p>拥有超过15年跨领域实战经验的商业体系构建专家。核心能力在于将公司战略转化为可执行、可复制的运营体系，通过<b>数字化工具、标准化流程与团队赋能</b>，驱动组织效率变革与业务的确定性增长。尤其擅长在混乱的业务初期建立秩序，为企业打造可持续增长的“运营基础设施”。我的职业生涯是从执行、到管理、到创造、再到体系构建的持续升维过程，具备从CEO视角理解战略并将其无损落地到业务一线的稀缺能力。</p>
+
+        <h2 class="content-title">工作经历</h2>
+        <div class="job">
+            <div class="job-header"><span class="job-company">邻犀生活</span><span class="job-date">近期</span></div>
+            <p class="job-title">COO</p>
+            <ul>
+                <li><b>体系构建</b>：从0到1主导构建以“企微+CRM”为核心的业财一体化中台，整合财务、法务、OA等8个模块，实现业务全流程100%线上化，打通数据孤岛。</li>
+                <li><b>组织赋能</b>：为解决销售管理难题，设计并推行合伙人制度，激发团队自主性；建立知识库与标准化SOP，将组织能力沉淀为公司资产。</li>
+                <li><b>战略决策</b>：作为核心管理层，参与公司战略制定，基于数据分析提供决策支持，推动公司从“野蛮生长”向“精细化运营”转型。</li>
+            </ul>
+        </div>
+        <div class="job">
+            <div class="job-header"><span class="job-company">福家房产</span><span class="job-date">过往</span></div>
+            <p class="job-title">新媒体运营</p>
+            <ul>
+                <li><b>增长体系</b>：创建新媒体IP矩阵运营体系，通过输出<b>《内容生产方法论》</b>，实现IP的工业化复制，为业务线稳定贡献<b>日均3+条高意向客户线索</b>。</li>
+                <li><b>商业验证</b>：亲率装修业务团队进行新业务模式探索，以自建的新媒体获客体系为引擎，在<b>3个月内从0达成100万业绩</b>，成功验证商业闭环。</li>
+                <li><b>产品SaaS化</b>：成功主导将内部经纪人协作工具“红豆经纪联盟”，转型为面向市场的SaaS产品。独立完成商业调研、产品规划及商业计划书撰写。</li>
+            </ul>
+        </div>
+        <div class="job">
+            <div class="job-header"><span class="job-company">耕集良品</span><span class="job-date">过往</span></div>
+            <p class="job-title">运营</p>
+            <ul>
+                <li><b>用户增长</b>：策划并执行“会员砍价”等裂变活动，以<b>2.3元/人的行业领先CPA</b>获取付费会员，并在26小时内为关联项目引入1.3万精准用户。</li>
+                <li><b>系统整合</b>：主导后端系统整合项目，统一订单、会员、商品、支付等接口，解决多系统并存导致的数据混乱问题，为精细化运营奠定基础。</li>
+            </ul>
+        </div>
+        <div class="job">
+            <div class="job-header"><span class="job-company">心蓝天超市</span><span class="job-date">过往</span></div>
+            <p class="job-title">O2O负责人（517新鲜网创始人）</p>
+            <ul>
+                <li><b>0到1孵化</b>：内部创业，从0到1搭建生鲜O2O平台“517新鲜网”。全面负责商业模式设计、产品原型（超200页）、技术团队管理及运营体系搭建。</li>
+                <li><b>全盘操盘</b>：作为项目第一负责人，覆盖了市场调研、产品、技术、运营、仓储、配送等业务全链条，积累了宝贵的从0到1创造商业价值的复合经验。</li>
+            </ul>
+        </div>
+
+        <h2 class="content-title">专业技能 & 认证</h2>
+        <ul>
+            <li><b>战略与管理</b>：商业模式设计、体系化建设、数字化转型规划、OKR目标管理、团队赋能与知识管理</li>
+            <li><b>产品与增长</b>：产品生命周期管理、用户研究、增长黑客、私域流量运营、AARRR模型、数据分析(Power BI)</li>
+            <li><b>运营与营销</b>：新媒体矩阵运营、内容营销、活动策划、社区运营、品牌定位</li>
+            <li><b>工具与技术</b>：Axure, Xmind,语雀, Notion, Photoshop, HTML/CSS, 对SaaS/CRM/ERP/OA系统有深刻理解</li>
+            <li><b>专业认证</b>：PMP (项目管理专业人士), CMMI3 (曾主导导入)</li>
+        </ul>
+        <h2 class="content-title">教育背景</h2>
+        <p>中专 - 计算机应用</p>
+    </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded',function(){const e=document.querySelectorAll(".tab-btn"),t=document.querySelectorAll(".tab-content"),n=document.getElementById("downloadPdfBtn");e.forEach(l=>{l.addEventListener("click",()=>{e.forEach(e=>e.classList.remove("active")),t.forEach(e=>e.classList.remove("active")),l.classList.add("active");const r=document.getElementById(l.dataset.tab);r.classList.add("active")})}),n.addEventListener("click",()=>{const e=document.querySelector(".tab-btn.active"),t=`高增浩-${e.textContent.trim()}.pdf`,l=document.querySelector(".tab-content.active"),r=document.createElement("div");r.innerHTML=`<div class="header" style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #e9ecef; padding-bottom: 20px; margin-bottom: 25px;"><div class="header-title"><h1>高增浩</h1><p>15+年经验 | 复合型运营与体系构建专家 | 战略落地者</p></div><div id="contact-info" style="font-size: 0.95em; color: #495057; text-align: right;">电话: 138-xxxx-xxxx<br>邮箱: your-email@example.com<br>地点: 福建省福州市</div></div>`,l.prepend(r);const o={margin:[.6,.5,.6,.5],filename:t,image:{type:"jpeg",quality:.98},html2canvas:{scale:2,useCORS:!0},jsPDF:{unit:"in",format:"letter",orientation:"portrait"}};html2pdf().from(l).set(o).save().then(()=>{l.removeChild(r)})})});
+</script>
+</body></html>
